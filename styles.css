@@ -261,7 +261,7 @@ h3 {
 }
 
 .office-hero img {
-  object-position: 34% center;
+  object-position: 18% center;
   filter: saturate(0.96) contrast(1.03);
 }
 
@@ -274,11 +274,12 @@ h3 {
 
 .promise {
   position: absolute;
-  right: 28px;
-  bottom: 28px;
-  left: 28px;
+  right: 42px;
+  bottom: 42px;
+  left: 42px;
   z-index: 1;
   color: var(--ivory);
+  text-align: center;
 }
 
 .promise span {
@@ -643,7 +644,10 @@ h3 {
 }
 
 .site-footer img {
-  width: 156px;
+  width: 184px;
+  padding: 10px 12px;
+  background: var(--ivory);
+  border-radius: 4px;
 }
 
 .site-footer p {
