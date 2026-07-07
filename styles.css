@@ -52,11 +52,11 @@ a {
 }
 
 .brand img {
-  width: min(220px, 48vw);
-  height: 62px;
-  object-fit: cover;
+  width: min(248px, 54vw);
+  height: 64px;
+  object-fit: contain;
   object-position: center;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .site-nav {
@@ -647,9 +647,9 @@ h3 {
 }
 
 .site-footer img {
-  width: 220px;
-  height: 76px;
-  object-fit: cover;
+  width: 240px;
+  height: 78px;
+  object-fit: contain;
   object-position: center;
   border-radius: 4px;
 }
