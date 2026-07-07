@@ -12,3 +12,12 @@ nav?.addEventListener("click", (event) => {
     toggle?.setAttribute("aria-expanded", "false");
   }
 });
+
+document.querySelectorAll("[data-product]").forEach((link) => {
+  link.addEventListener("click", () => {
+    const select = document.querySelector('select[name="producto"]');
+    if (select) {
+      select.value = link.dataset.product;
+    }
+  });
+});
