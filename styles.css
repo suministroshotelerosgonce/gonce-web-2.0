@@ -558,7 +558,7 @@ h3 {
 
 .operation-gallery .wide {
   grid-column: 1 / -1;
-  height: 300px;
+  height: 460px;
 }
 
 .brand-system {
@@ -644,7 +644,6 @@ h3 {
 
 .site-footer img {
   width: 156px;
-  filter: brightness(1.95) saturate(0.7);
 }
 
 .site-footer p {
@@ -773,7 +772,7 @@ h3 {
   .operation-gallery .wide,
   .operation-gallery img {
     grid-column: auto;
-    height: 230px;
+    height: 300px;
   }
 
   .site-footer {
