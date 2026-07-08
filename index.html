@@ -238,7 +238,10 @@
             <span>Ubicacion: Higuey, Republica Dominicana</span>
           </div>
         </div>
-        <form class="quote-form" action="mailto:ventas@shgonce.com" method="post" enctype="text/plain">
+        <form class="quote-form" action="https://formsubmit.co/ventas@shgonce.com" method="post">
+          <input type="hidden" name="_subject" value="Nueva solicitud de cotizacion - GONCE" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
           <label>
             Nombre
             <input name="nombre" type="text" autocomplete="name" required />
@@ -265,6 +268,7 @@
             Mensaje
             <textarea name="mensaje" rows="4" placeholder="Volumen, frecuencia y ubicacion de entrega"></textarea>
           </label>
+          <p class="form-status" role="status" aria-live="polite"></p>
           <button class="button primary" type="submit">Enviar solicitud</button>
         </form>
       </section>

@@ -21,3 +21,39 @@ document.querySelectorAll("[data-product]").forEach((link) => {
     }
   });
 });
+
+const quoteForm = document.querySelector(".quote-form");
+const formStatus = document.querySelector(".form-status");
+
+quoteForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const submitButton = quoteForm.querySelector('button[type="submit"]');
+  const formData = new FormData(quoteForm);
+
+  formStatus.textContent = "Enviando solicitud...";
+  submitButton.disabled = true;
+
+  try {
+    const response = await fetch(quoteForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error("No se pudo enviar la solicitud.");
+    }
+
+    quoteForm.reset();
+    formStatus.textContent =
+      "Solicitud recibida. Te contactaremos lo antes posible.";
+  } catch (error) {
+    formStatus.textContent =
+      "No pudimos enviar la solicitud. Por favor intenta nuevamente o escríbenos por WhatsApp.";
+  } finally {
+    submitButton.disabled = false;
+  }
+});
