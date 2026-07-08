@@ -52,8 +52,8 @@ a {
 }
 
 .brand img {
-  width: min(250px, 54vw);
-  height: 78px;
+  width: min(260px, 56vw);
+  height: 86px;
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
@@ -647,8 +647,8 @@ h3 {
 }
 
 .site-footer img {
-  width: 260px;
-  height: 92px;
+  width: 280px;
+  height: 104px;
   object-fit: cover;
   object-position: center;
   border-radius: 4px;
